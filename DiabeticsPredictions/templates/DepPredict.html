@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+  <style>
+body {
+background-color: lightblue;
+font-family: Helvetica;
+}
+
+#main {
+width: 80%;
+max-width: 950px;
+border: 1px gray solid;
+margin: auto;
+padding: 10px;
+background-color: white;
+border-radius: 10px;
+}
+
+
+
+label {
+display: block;
+}
+
+input {
+width: 30px;
+margin-left: 20px;
+}
+
+button {
+width: 100px;
+margin-top: 20px;
+}
+
+</style>
+
+</head>
+<body>
+<header class="text-gray-600 body-font">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-purple-500 rounded-full" viewBox="0 0 24 24">
+        <path d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"></path>
+      </svg>
+      <span class="ml-3 text-xl">First Doctor</span>
+    </a>
+    <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+      <a href="/Home.html" class="mr-5 hover:text-gray-900">Home</a>
+      <a href="/Diabetics" class="mr-5 hover:text-gray-900">Diabetics Prediction</a>
+      <a href="/Heart.html" class="mr-5 hover:text-gray-900">Heart Diseases Prediction</a>
+      <a href="/Depression.html" class="mr-5 hover:text-gray-900">Depression Prediction</a>
+    </nav>
+    <a href="/chatbot.html">
+      <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Chat Bot
+      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+        <path d="M5 12h14M12 5l7 7-7 7"></path>
+      </svg>
+      </button>
+    </a>
+  </div>
+</header>
+
+<div id="main"><!-- open main div -->
+    <div id="header"><!-- open header div -->
+    </div><!-- close header div -->
+
+  <h1><strong>Depression Prediction</strong></h1>
+    <form id="form1">
+
+        <li><h2>Little interest or pleasure in doing things?</h2></li>
+        <label for="var_string"><input type="radio" name="interset" value="0" id="var_string" />NOT AT ALL</label>
+        <label for="var_join"><input type="radio" name="interset" value="0" id="var_join" />SEVERAL DAYS</label>
+        <label for="var_info"><input type="radio" name="interset" value="0" id="var_info" />MORE THAN HALF THE DAYS</label>
+        <label for="var_condition"><input type="radio" name="interset" value="10" id="var_condition"/>NEARLY EVERY DAY</label>
+
+        <li><h2>Feeling down, depressed, or hopeless?</h2></li>
+        <label for="sub_string"><input type="radio" name="sub" value="10" id="sub_string"/>NOT AT ALL</label>
+        <label for="sub_join"><input type="radio" name="sub" value="0" id="sub_join"/>SEVERAL DAYS</label>
+        <label for="sub_info"><input type="radio" name="sub" value="0" id="sub_info" />MORE THAN HALF THE DAYS</label>
+        <label for="sub_condition"><input type="radio" name="sub" value="0" id="sub_condition" />NEARLY EVERY DAY</label>
+
+        <li><h2>Trouble falling or staying asleep, or sleeping too much?</h2></li>
+        <label for="cat_string"><input type="radio" name="con" value="10" id="cat_string" />NOT AT ALL</label>
+        <label for="cat_join"><input type="radio" name="con" value="0" id="cat_join" />SEVERAL DAYS</label>
+        <label for="cat_info"><input type="radio" name="con" value="0" id="cat_info" />MORE THAN HALF THE DAYS</label>
+        <label for="cat_condition"><input type="radio" name="con" value="0" id="cat_condition" />NEARLY EVERY DAY</label>
+
+        <li><h2>Feeling tired or having little energy?</h2></li>
+        <label for="if_string"><input type="radio" name="ifstate" value="10" id="if_string" />NOT AT ALL</label>
+        <label for="if_join"><input type="radio" name="ifstate" value="0" id="if_join" />SEVERAL DAYS</label>
+        <label for="if_info"><input type="radio" name="ifstate" value="0" id="if_info" />MORE THAN HALF THE DAYS</label>
+        <label for="if_condition"><input type="radio" name="ifstate"  value="0" id="if_condition" />NEARLY EVERY DAY</label>
+
+        <li><h2>Poor appetite or overeating?</h2></li>
+        <label for="po_string"><input type="radio" name="poor" value="10" id="po_string" />NOT AT ALL</label>
+        <label for="po_join"><input type="radio" name="poor" value="0" id="po_join" />SEVERAL DAYS</label>
+        <label for="po_info"><input type="radio" name="poor" value="0" id="po_info" />MORE THAN HALF THE DAYS</label>
+        <label for="po_condition"><input type="radio" name="poor"  value="0" id="po_condition" />NEARLY EVERY DAY</label>
+
+        <li><h2>Feeling bad about yourself - or that you are a failure or have let yourself or your family down?</h2></li>
+        <label for="fe_string"><input type="radio" name="feel" value="10" id="fe_string" />NOT AT ALL</label>
+        <label for="fe_join"><input type="radio" name="feel" value="0" id="fe_join" />SEVERAL DAYS</label>
+        <label for="fe_info"><input type="radio" name="feel" value="0" id="fe_info" />MORE THAN HALF THE DAYS</label>
+        <label for="fe_condition"><input type="radio" name="feel"  value="0" id="fe_condition" />NEARLY EVERY DAY</label>
+
+        <li><h2>Trouble concentrating on things, such as reading the newspaper or watching television?</h2></li>
+        <label for="tr_string"><input type="radio" name="trouble" value="10" id="tr_string" />NOT AT ALL</label>
+        <label for="tr_join"><input type="radio" name="trouble" value="0" id="tr_join" />SEVERAL DAYS</label>
+        <label for="tr_info"><input type="radio" name="trouble" value="0" id="tr_info" />MORE THAN HALF THE DAYS</label>
+        <label for="tr_condition"><input type="radio" name="trouble"  value="0" id="tr_condition" />NEARLY EVERY DAY</label>
+
+        <li><h2>Moving or speaking so slowly that other people could have noticed Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual?</h2></li>
+        <label for="mo_string"><input type="radio" name="moving" value="10" id="mo_string" />NOT AT ALL</label>
+        <label for="mo_join"><input type="radio" name="moving" value="0" id="mo_join" />SEVERAL DAYS</label>
+        <label for="mo_info"><input type="radio" name="moving" value="0" id="mo_info" />MORE THAN HALF THE DAYS</label>
+        <label for="mo_condition"><input type="radio" name="moving"  value="0" id="mo_condition" />NEARLY EVERY DAY</label>
+
+        <li><h2>Thoughts that you would be better off dead, or of hurting yourself?</h2></li>
+        <label for="th_string"><input type="radio" name="thought" value="10" id="th_string" />NOT AT ALL</label>
+        <label for="th_join"><input type="radio" name="thought" value="0" id="th_join" />SEVERAL DAYS</label>
+        <label for="th_info"><input type="radio" name="thought" value="0" id="th_info" />MORE THAN HALF THE DAYS</label>
+        <label for="th_condition"><input type="radio" name="thought"  value="0" id="th_condition" />NEARLY EVERY DAY</label>
+
+        <li><h2>If you checked off any problems, how difficult have these problems made it for you at work, home, or with other people?</h2></li>
+        <label for="ch_string"><input type="radio" name="check" value="0" id="ch_string" />NOT AT ALL</label>
+        <label for="ch_join"><input type="radio" name="check" value="0" id="ch_join" />SEVERAL DAYS</label>
+        <label for="ch_info"><input type="radio" name="check" value="0" id="ch_info" />MORE THAN HALF THE DAYS</label>
+        <label for="ch_condition"><input type="radio" name="check"  value="10" id="ch_condition" />NEARLY EVERY DAY</label>
+
+
+
+
+        <button type="submit" value="Submit">Submit</button>
+
+        </form>
+
+
+
+    <p>Your depression level is: <span id="grade">__</span></p>
+    <p id="grade2"></p>
+    </div><!-- close main div -->
+
+    <script>
+        document.getElementById("form1").onsubmit=function() {
+               interset = parseInt(document.querySelector('input[name = "interset"]:checked').value);
+               sub = parseInt(document.querySelector('input[name = "sub"]:checked').value);
+               con = parseInt(document.querySelector('input[name = "con"]:checked').value);
+               ifstate = parseInt(document.querySelector('input[name = "ifstate"]:checked').value);
+               poor = parseInt(document.querySelector('input[name = "poor"]:checked').value);
+               feel = parseInt(document.querySelector('input[name = "feel"]:checked').value);
+               trouble = parseInt(document.querySelector('input[name = "trouble"]:checked').value);
+               moving = parseInt(document.querySelector('input[name = "moving"]:checked').value);
+               thought = parseInt(document.querySelector('input[name = "thought"]:checked').value);
+               check = parseInt(document.querySelector('input[name = "check"]:checked').value);
+
+
+
+               result = 100-(interset + sub + con + ifstate + poor + feel + trouble + moving + thought + check);
+
+            document.getElementById("grade").innerHTML = result;
+
+if (result == 100) {result2 = "Your're Depressed, Please contact the expertises "};
+if (result == 90) {result2 = "Your're Depressed, Please contact the expertises"};
+if (result == 80) {result2 = "Your're Depressed, Please contact the expertises"};
+if (result == 70) {result2 = "Your're Depressed, Please contact the expertises"};
+if (result == 60) {result2 = "Your're Depressed, Please contact the expertises"};
+if (result == 50) {result2 = "Your're Moderate Depressed, Please Socialize more"};
+if (result == 40) {result2 = "Your're Moderate Depressed, Please Socialize more"};
+if (result == 30) {result2 = "Your're Moderate Depressed, Please Socialize more"};
+if (result == 20) {result2 = "Excellent! You're Not Depressed"};
+if (result == 10) {result2 = "Excellent! You're Not Depressed"};
+if (result == 0) {result2 = "Excellent! You're Not Depressed"};
+document.getElementById("grade2").innerHTML = result2;
+
+
+
+
+
+
+
+
+        return false; // required to not refresh the page; just leave this here
+        } //this ends the submit function
+
+        </script>
+
+
+    </body>
+
+
+
+
+
+
+</body>
+</html>
